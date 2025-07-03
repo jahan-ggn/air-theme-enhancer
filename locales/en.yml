@@ -1,0 +1,7 @@
+en:
+  theme_metadata:
+    description: A theme component that enhances the Air Theme by fixing scaling,
+      layout, and mobile responsiveness issues. It also improves category styling
+      and supports background customization.
+    settings:
+      example_setting: A description of a setting.

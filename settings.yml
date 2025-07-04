@@ -1,2 +1,4 @@
-example_setting:
-  default: true
+site_background_image:
+  type: upload
+  default: ""
+  description: "Upload an image to set as the background for the entire site"

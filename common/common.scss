@@ -1,0 +1,54 @@
+// Theme's SCSS
+:root {
+  --base-font-size-smallest: 0.65em;
+  --base-font-size-smaller: 0.7em;
+  --base-font-size: 0.8em;
+  --base-font-size-larger: 0.9em;
+  --base-font-size-largest: 1em;
+}
+
+@if $site-background-image != null and $site-background-image != "" {
+  html .background-container {
+    background-image: url(#{$site-background-image}) !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    clip-path: unset;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+}
+
+.welcome-banner__wrap > div {
+  max-width: 400px;
+}
+
+.custom-search-banner-headline,
+.custom-search-banner p {
+  display: none;
+}
+
+.category-heading {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: start;
+}
+
+.category-logo.aspect-image {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  width: auto;
+}
+
+.category-heading > span {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.category-heading > p {
+  grid-column: 2;
+  grid-row: 2;
+  font-size: 14px;
+}

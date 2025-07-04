@@ -1,11 +1,13 @@
+.custom-category-boxes:not(.above-discovery-categories-outlet) .category-box {
+  max-height: 100px !important;
+}
+
 .custom-category-boxes:not(.above-discovery-categories-outlet)
   .category-box
   .category-box-inner
   .category-logo {
-  width: 100%;
-  height: 100%;
-  aspect-ratio: 1/1;
-  margin: 6px 0 0 0;
+  align-self: self-start !important;
+  background-color: transparent !important;
 }
 
 .discourse-kanban-container .discourse-kanban-list {
